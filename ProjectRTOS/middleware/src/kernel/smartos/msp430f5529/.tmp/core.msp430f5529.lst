@@ -1,0 +1,28 @@
+
+.tmp/core.msp430f5529.o:     file format elf32-msp430
+
+SYMBOL TABLE:
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .MSP430.attributes	00000000 .MSP430.attributes
+00000000 g     F .text	00000000 os_dispatcher
+00000000         *UND*	00000000 os_kernel_mode
+
+
+
+Disassembly of section .text:
+
+00000000 <os_dispatcher>:
+
+.global os_dispatcher
+.type os_dispatcher, @function
+
+os_dispatcher:
+	mov os_kernel_mode, #00h
+   0:	13 40       	.word	0x4013;	????
+	...

@@ -1,0 +1,12 @@
+eclipse.preferences.version=1
+environment/project/0.38373417/OS/delimiter=;
+environment/project/0.38373417/OS/operation=replace
+environment/project/0.38373417/OS/value=Windows_NT;Windows
+environment/project/0.38373417/PATH/delimiter=;
+environment/project/0.38373417/PATH/operation=replace
+environment/project/0.38373417/PATH/value=E\:\\TU Graz\\ICE\\RTOS\\Software\\make\\make; C\:\\ti\\msp430_gcc\\bin
+environment/project/0.38373417/TOOLPATH_MSP430/delimiter=;
+environment/project/0.38373417/TOOLPATH_MSP430/operation=replace
+environment/project/0.38373417/TOOLPATH_MSP430/value=C\:\\ti\\msp430_gcc\\bin
+environment/project/0.38373417/append=true
+environment/project/0.38373417/appendContributed=true

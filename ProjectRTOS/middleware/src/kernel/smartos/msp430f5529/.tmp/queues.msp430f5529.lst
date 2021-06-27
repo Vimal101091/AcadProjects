@@ -1,0 +1,367 @@
+
+.tmp/queues.msp430f5529.o:     file format elf32-msp430
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 queues.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .rodata	00000000 .rodata
+00000000 l    d  .lower.text.insert_into_memberlist	00000000 .lower.text.insert_into_memberlist
+00000000 l     O .lower.rodata	00000017 __func__.2870
+00000000 l    d  .lower.text.remove_from_memberlist	00000000 .lower.text.remove_from_memberlist
+00000000 l    d  .lower.rodata	00000000 .lower.rodata
+00000000 l    d  .lower.bss	00000000 .lower.bss
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .debug_line_end	00000000 .debug_line_end
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .debug_line.lower.text.insert_into_memberlist	00000000 .debug_line.lower.text.insert_into_memberlist
+00000000 l    d  .debug_line.lower.text.remove_from_memberlist	00000000 .debug_line.lower.text.remove_from_memberlist
+00000000 l    d  .MSP430.attributes	00000000 .MSP430.attributes
+00000000         *UND*	00000000 __mulhi2_f5
+00000000 g     F .lower.text.insert_into_memberlist	0000013c insert_into_memberlist
+00000000         *UND*	00000000 __assert_func
+00000000         *UND*	00000000 os_tasks
+00000002  w      .lower.bss	00000000 os_readyQueue
+00000000 g     F .lower.text.remove_from_memberlist	000000ba remove_from_memberlist
+00000000  w      .lower.bss	00000000 os_timeoutQueueDirty
+00000001  w      .lower.bss	00000000 os_timeoutQueue
+00000004  w      .lower.bss	00000000 os_runningTask
+00000006  w      .lower.bss	00000000 os_kernel_mode
+
+
+
+Disassembly of section .lower.text.insert_into_memberlist:
+
+00000000 <insert_into_memberlist>:
+   0:	6a 15       	pushm	#7,	r10	;16-bit words
+
+00000002 <.LCFI0>:
+   2:	31 80 06 00 	sub	#6,	r1	;
+
+00000006 <.LCFI1>:
+   6:	4a 4c       	mov.b	r12,	r10	;
+   8:	0b 4d       	mov	r13,	r11	;
+
+0000000a <.Loc.21.1>:
+   a:	0d 93       	cmp	#0,	r13	;r3 As==00
+   c:	00 20       	jnz	$+2      	;abs 0xe
+
+0000000e <.Loc.21.1>:
+   e:	3f 40 00 00 	mov	#0,	r15	;
+  12:	3e 40 00 00 	mov	#0,	r14	;
+  16:	7d 40 15 00 	mov.b	#21,	r13	;#0x0015
+
+0000001a <.LVL1>:
+  1a:	3c 40 00 00 	mov	#0,	r12	;
+
+0000001e <.LVL2>:
+  1e:	b0 12 00 00 	call	#0		;
+
+00000022 <.L2>:
+  22:	36 40 00 00 	mov	#0,	r6	;
+  26:	34 40 00 00 	mov	#0,	r4	;
+  2a:	7d 40 36 00 	mov.b	#54,	r13	;#0x0036
+  2e:	0c 4a       	mov	r10,	r12	;
+
+00000030 <.LVL4>:
+  30:	81 4b 00 00 	mov	r11,	0(r1)	;
+  34:	84 12       	call	r4		;
+
+00000036 <.LVL5>:
+  36:	0f 46       	mov	r6,	r15	;
+  38:	0f 5c       	add	r12,	r15	;
+  3a:	09 46       	mov	r6,	r9	;
+  3c:	08 44       	mov	r4,	r8	;
+  3e:	2b 41       	mov	@r1,	r11	;
+  40:	1b 9f 28 00 	cmp	40(r15),r11	;0x00028
+  44:	00 24       	jz	$+2      	;abs 0x46
+
+00000046 <.LVL6>:
+  46:	67 4b       	mov.b	@r11,	r7	;
+  48:	77 93       	cmp.b	#-1,	r7	;r3 As==11
+  4a:	00 20       	jnz	$+2      	;abs 0x4c
+
+0000004c <.Loc.28.1>:
+  4c:	cb 4a 00 00 	mov.b	r10,	0(r11)	;
+
+00000050 <.L13>:
+  50:	cf 4a 1a 00 	mov.b	r10,	26(r15)	; 0x001a
+
+00000054 <.Loc.44.1>:
+  54:	cf 47 32 00 	mov.b	r7,	50(r15)	; 0x0032
+
+00000058 <.Loc.45.1>:
+  58:	7d 40 36 00 	mov.b	#54,	r13	;#0x0036
+  5c:	0c 4a       	mov	r10,	r12	;
+  5e:	84 12       	call	r4		;
+
+00000060 <.LVL7>:
+  60:	0c 56       	add	r6,	r12	;
+
+00000062 <.L12>:
+  62:	bc 40 00 00 	mov	#0,	40(r12)	; 0x0028
+  66:	28 00 
+
+00000068 <.L1>:
+  68:	31 50 06 00 	add	#6,	r1	;
+  6c:	64 17       	popm	#7,	r10	;16-bit words
+  6e:	30 41       	ret			
+
+00000070 <.L4>:
+  70:	7d 40 36 00 	mov.b	#54,	r13	;#0x0036
+  74:	0c 47       	mov	r7,	r12	;
+  76:	81 4b 00 00 	mov	r11,	0(r1)	;
+  7a:	81 4f 02 00 	mov	r15,	2(r1)	;
+  7e:	84 12       	call	r4		;
+
+00000080 <.LVL9>:
+  80:	0c 56       	add	r6,	r12	;
+  82:	55 4c 32 00 	mov.b	50(r12),r5	;0x00032
+
+00000086 <.LVL10>:
+  86:	1f 41 02 00 	mov	2(r1),	r15	;
+  8a:	91 4f 1c 00 	mov	28(r15),4(r1)	;0x0001c
+  8e:	04 00 
+
+00000090 <.LVL11>:
+  90:	7d 40 36 00 	mov.b	#54,	r13	;#0x0036
+  94:	0c 47       	mov	r7,	r12	;
+  96:	84 12       	call	r4		;
+  98:	0c 56       	add	r6,	r12	;
+  9a:	2b 41       	mov	@r1,	r11	;
+  9c:	1f 41 02 00 	mov	2(r1),	r15	;
+  a0:	9c 91 04 00 	cmp	4(r1),	28(r12)	; 0x001c
+  a4:	1c 00 
+  a6:	00 2c       	jc	$+2      	;abs 0xa8
+
+000000a8 <.LVL13>:
+  a8:	4a 97       	cmp.b	r7,	r10	;
+  aa:	00 20       	jnz	$+2      	;abs 0xac
+
+000000ac <.L5>:
+  ac:	76 40 36 00 	mov.b	#54,	r6	;#0x0036
+
+000000b0 <.L7>:
+  b0:	75 93       	cmp.b	#-1,	r5	;r3 As==11
+  b2:	00 24       	jz	$+2      	;abs 0xb4
+
+000000b4 <.Loc.50.1>:
+  b4:	47 9a       	cmp.b	r10,	r7	;
+  b6:	00 24       	jz	$+2      	;abs 0xb8
+
+000000b8 <.Loc.54.1>:
+  b8:	0d 46       	mov	r6,	r13	;
+  ba:	0c 47       	mov	r7,	r12	;
+  bc:	88 12       	call	r8		;
+  be:	0c 59       	add	r9,	r12	;
+  c0:	1c 4c 1c 00 	mov	28(r12),r12	;0x0001c
+  c4:	81 9c 04 00 	cmp	r12,	4(r1)	;
+  c8:	00 2c       	jc	$+2      	;abs 0xca
+
+000000ca <.Loc.54.1>:
+  ca:	0d 46       	mov	r6,	r13	;
+  cc:	0c 45       	mov	r5,	r12	;
+  ce:	88 12       	call	r8		;
+  d0:	0c 59       	add	r9,	r12	;
+  d2:	9c 91 04 00 	cmp	4(r1),	28(r12)	; 0x001c
+  d6:	1c 00 
+  d8:	00 2c       	jc	$+2      	;abs 0xda
+
+000000da <.L11>:
+  da:	7d 40 36 00 	mov.b	#54,	r13	;#0x0036
+  de:	0c 47       	mov	r7,	r12	;
+  e0:	88 12       	call	r8		;
+  e2:	0c 59       	add	r9,	r12	;
+  e4:	cc 4a 32 00 	mov.b	r10,	50(r12)	; 0x0032
+
+000000e8 <.Loc.74.1>:
+  e8:	7d 40 36 00 	mov.b	#54,	r13	;#0x0036
+  ec:	0c 4a       	mov	r10,	r12	;
+  ee:	88 12       	call	r8		;
+  f0:	0c 59       	add	r9,	r12	;
+  f2:	cc 4a 1a 00 	mov.b	r10,	26(r12)	; 0x001a
+
+000000f6 <.Loc.75.1>:
+  f6:	cc 45 32 00 	mov.b	r5,	50(r12)	; 0x0032
+
+000000fa <.Loc.76.1>:
+  fa:	7d 40 36 00 	mov.b	#54,	r13	;#0x0036
+  fe:	0c 4a       	mov	r10,	r12	;
+ 100:	88 12       	call	r8		;
+ 102:	0c 59       	add	r9,	r12	;
+ 104:	30 40 00 00 	br	#0x0000		;
+
+00000108 <.L6>:
+ 108:	cb 4a 00 00 	mov.b	r10,	0(r11)	;
+
+0000010c <.Loc.42.1>:
+ 10c:	c2 4a 00 00 	mov.b	r10,	&0x0000	;
+ 110:	30 40 00 00 	br	#0x0000		;
+
+00000114 <.L8>:
+ 114:	81 9c 04 00 	cmp	r12,	4(r1)	;
+ 118:	00 20       	jnz	$+2      	;abs 0x11a
+
+0000011a <.Loc.62.1>:
+ 11a:	0d 46       	mov	r6,	r13	;
+ 11c:	0c 45       	mov	r5,	r12	;
+ 11e:	88 12       	call	r8		;
+ 120:	0c 59       	add	r9,	r12	;
+ 122:	91 9c 1c 00 	cmp	28(r12),4(r1)	;0x0001c
+ 126:	04 00 
+ 128:	00 20       	jnz	$+2      	;abs 0x12a
+
+0000012a <.L9>:
+ 12a:	0d 46       	mov	r6,	r13	;
+ 12c:	0c 45       	mov	r5,	r12	;
+ 12e:	88 12       	call	r8		;
+ 130:	0c 59       	add	r9,	r12	;
+
+00000132 <.LVL25>:
+ 132:	07 45       	mov	r5,	r7	;
+ 134:	55 4c 32 00 	mov.b	50(r12),r5	;0x00032
+
+00000138 <.LVL26>:
+ 138:	30 40 00 00 	br	#0x0000		;
+
+Disassembly of section .lower.text.remove_from_memberlist:
+
+00000000 <remove_from_memberlist>:
+   0:	6a 15       	pushm	#7,	r10	;16-bit words
+
+00000002 <.LCFI2>:
+   2:	48 4c       	mov.b	r12,	r8	;
+
+00000004 <.Loc.81.1>:
+   4:	08 93       	cmp	#0,	r8	;r3 As==00
+   6:	00 20       	jnz	$+2      	;abs 0x8
+
+00000008 <.L16>:
+   8:	30 40 00 00 	br	#0x0000		;
+
+0000000c <.L15>:
+   c:	55 42 00 00 	mov.b	&0x0000,r5	;0x0000
+
+00000010 <.LVL28>:
+  10:	75 93       	cmp.b	#-1,	r5	;r3 As==11
+  12:	00 24       	jz	$+2      	;abs 0x14
+
+00000014 <.Loc.88.1>:
+  14:	78 93       	cmp.b	#-1,	r8	;r3 As==11
+  16:	00 24       	jz	$+2      	;abs 0x18
+
+00000018 <.LVL29>:
+  18:	36 40 00 00 	mov	#0,	r6	;
+  1c:	34 40 00 00 	mov	#0,	r4	;
+  20:	7d 40 36 00 	mov.b	#54,	r13	;#0x0036
+  24:	0c 45       	mov	r5,	r12	;
+
+00000026 <.LVL30>:
+  26:	84 12       	call	r4		;
+
+00000028 <.LVL31>:
+  28:	0c 56       	add	r6,	r12	;
+  2a:	5a 4c 32 00 	mov.b	50(r12),r10	;0x00032
+
+0000002e <.LVL32>:
+  2e:	09 46       	mov	r6,	r9	;
+  30:	07 44       	mov	r4,	r7	;
+
+00000032 <.Loc.94.1>:
+  32:	cc 98 1a 00 	cmp.b	r8,	26(r12)	; 0x001a
+  36:	00 20       	jnz	$+2      	;abs 0x38
+
+00000038 <.Loc.94.1>:
+  38:	3c 50 28 00 	add	#40,	r12	;#0x0028
+
+0000003c <.LVL33>:
+  3c:	bc 90 00 00 	cmp	#0,	0(r12)	;
+  40:	00 00 
+  42:	00 24       	jz	$+2      	;abs 0x44
+
+00000044 <.L18>:
+  44:	76 40 36 00 	mov.b	#54,	r6	;#0x0036
+
+00000048 <.L20>:
+  48:	7a 93       	cmp.b	#-1,	r10	;r3 As==11
+  4a:	00 24       	jz	$+2      	;abs 0x4c
+
+0000004c <.LVL36>:
+  4c:	0d 46       	mov	r6,	r13	;
+  4e:	0c 4a       	mov	r10,	r12	;
+  50:	87 12       	call	r7		;
+  52:	0c 59       	add	r9,	r12	;
+  54:	cc 98 1a 00 	cmp.b	r8,	26(r12)	; 0x001a
+  58:	00 20       	jnz	$+2      	;abs 0x5a
+
+0000005a <.Loc.106.1>:
+  5a:	bc 90 00 00 	cmp	#0,	40(r12)	; 0x0028
+  5e:	28 00 
+  60:	00 20       	jnz	$+2      	;abs 0x62
+
+00000062 <.Loc.108.1>:
+  62:	08 4c       	mov	r12,	r8	;
+
+00000064 <.LVL38>:
+  64:	38 50 32 00 	add	#50,	r8	;#0x0032
+  68:	66 48       	mov.b	@r8,	r6	;
+  6a:	7d 40 36 00 	mov.b	#54,	r13	;#0x0036
+  6e:	0c 45       	mov	r5,	r12	;
+  70:	87 12       	call	r7		;
+  72:	0c 59       	add	r9,	r12	;
+  74:	cc 46 32 00 	mov.b	r6,	50(r12)	; 0x0032
+
+00000078 <.Loc.109.1>:
+  78:	f8 43 00 00 	mov.b	#-1,	0(r8)	;r3 As==11
+
+0000007c <.Loc.110.1>:
+  7c:	7d 40 36 00 	mov.b	#54,	r13	;#0x0036
+  80:	0c 4a       	mov	r10,	r12	;
+  82:	87 12       	call	r7		;
+  84:	0c 59       	add	r9,	r12	;
+  86:	8c 43 28 00 	mov	#0,	40(r12)	;r3 As==00, 0x0028
+
+0000008a <.Loc.111.1>:
+  8a:	30 40 00 00 	br	#0x0000		;
+
+0000008e <.L19>:
+  8e:	c2 4a 00 00 	mov.b	r10,	&0x0000	;
+
+00000092 <.Loc.97.1>:
+  92:	8c 43 00 00 	mov	#0,	0(r12)	;r3 As==00
+
+00000096 <.Loc.98.1>:
+  96:	7d 40 36 00 	mov.b	#54,	r13	;#0x0036
+  9a:	0c 45       	mov	r5,	r12	;
+
+0000009c <.LVL42>:
+  9c:	84 12       	call	r4		;
+  9e:	0c 56       	add	r6,	r12	;
+  a0:	fc 43 32 00 	mov.b	#-1,	50(r12)	;r3 As==11, 0x0032
+
+000000a4 <.L14>:
+  a4:	64 17       	popm	#7,	r10	;16-bit words
+  a6:	30 41       	ret			
+
+000000a8 <.L21>:
+  a8:	0d 46       	mov	r6,	r13	;
+  aa:	0c 4a       	mov	r10,	r12	;
+  ac:	87 12       	call	r7		;
+  ae:	0c 59       	add	r9,	r12	;
+
+000000b0 <.LVL47>:
+  b0:	05 4a       	mov	r10,	r5	;
+
+000000b2 <.LVL48>:
+  b2:	5a 4c 32 00 	mov.b	50(r12),r10	;0x00032
+
+000000b6 <.LVL49>:
+  b6:	30 40 00 00 	br	#0x0000		;
